@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  proxy:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - ALLOWED_IPS=127.0.0.1
